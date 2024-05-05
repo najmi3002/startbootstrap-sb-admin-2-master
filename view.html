@@ -65,7 +65,14 @@
         <i class="fas fa-fw fa-cog"></i>
         <span>Reservation</span>
     </a>
+               <a class="nav-link" href="viewhtml.html">
+        <i class="fas fa-fw fa-list"></i>
+        <span>Reservation Made</span>
+    </a>
 </li>
+
+
+
             
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -216,49 +223,105 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Reservation</h1>
+                        <h1 class="h3 mb-0 text-gray-800">RESERVATION MADE</h1>
                        
                     </div>
                <!-- end reservation word-->
                    <div class="container">
 
-        <!-- start volunteer information -->
-        <div class="row justify-content-center">
+    <!-- start volunteer information -->
+    <div class="row justify-content-center">
 
-            <div class="col-xl-10 col-lg-12 col-md-9">
+        <!-- Active Section -->
+        <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
+            <h2 class="mb-3">Active</h2>
+        </div>
 
-                <div class="card o-hidden border-0 shadow-lg my-5">
-                    <div class="card-body p-0">
-                        
-                            <!-- Project Card Example -->
-                           <div class="card shadow mb-4"> 
-                               <div class="card-header"> <h6 class="m-0 font-weight-bold text-primary">Volunteer Information</h6> </div> 
-                               <div class="card-body text-"> <form> 
-                                       <div class="form-group"> <label for="name">Name:</label> <input type="text" class="form-control" id="name" placeholder="Enter name"> </div>
-                                       <div class="form-group"> <label for="id">ID:</label> <input type="text" class="form-control" id="id" placeholder="Enter ID"> </div>
-                                       <div class="form-group"> <label for="phone">Phone Number:</label> <input type="text" class="form-control" id="phone" placeholder="Enter phone number"> </div>
-                                       <div class="form-group"> <label for="email">Email:</label> <input type="email" class="form-control" id="email" placeholder="Enter email"> </div> 
-                                       <div class="form-group"> <label for="dob">Date of Birth:</label> <input type="date" class="form-control" id="dob" placeholder="Enter date of birth"> </div> 
-                                       <div class="form-group"> <label for="address">Address:</label> <input type="text" class="form-control" id="address" placeholder="Enter address"> </div> 
-                                       <div class="form-group"> <label for="age">Age:</label> <input type="number" class="form-control" id="age" placeholder="Enter age"> </div> 
-                                       <div class="form-group"> <label for="occupation">Occupation:</label> <input type="text" class="form-control" id="occupation" placeholder="Enter occupation"> </div> 
-                                      <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                    Submit
-                                </a>
-                                   </form>
-                               </div>
-                           </div>
+        <!-- Container 1 (Paid) - Active -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+            <div class="card o-hidden border-0 shadow-lg">
+                <div class="card-body p-0">
+                    <div class="card shadow mb-4 bg-success"> <!-- Green color for paid -->
+                        <div class="card-header"> 
+                            <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
+                        </div> 
+                        <div class="card-body text-white"> 
+                            <form> 
+                                <!-- Display user's reservation details -->
+                                <p>Date: 2024-05-15</p>
+                                <p>Name: Arif Saiful Bin Omar</p>
+                                <p>Email: arifsaiful@gmail.com</p>
+                                <p>Status: Paid</p>
+                                <!-- Link to edit page -->
+                                <a href="update.html" class="btn btn-primary btn-user btn-block">EDIT</a>
+                            </form>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-         <!-- end volunteer information-->
-                   
 
+        <!-- Container 2 (Pending) - Active -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+            <div class="card o-hidden border-0 shadow-lg">
+                <div class="card-body p-0">
+                    <div class="card shadow mb-4 bg-info"> <!-- Blue color for pending -->
+                        <div class="card-header"> 
+                            <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
+                        </div> 
+                        <div class="card-body text-white"> 
+                            <form> 
+                                <!-- Display user's reservation details -->
+                                <p>Date: 2024-05-15</p>
+                                <p>Name: Alif Satar Bin Omar</p>
+                                <p>Email: alifsatar@gmail.com</p>
+                                <p>Status: Pending</p>
+                                <!-- Link to edit page -->
+                                <a href="update.html" class="btn btn-primary btn-user btn-block">EDIT</a>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
+            <h2 class="mb-3">History</h2>
+        </div>
+
+        <!-- Container 3 (Paid) - History -->
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+            <div class="card o-hidden border-0 shadow-lg">
+                <div class="card-body p-0">
+                    <div class="card shadow mb-4 bg-danger"> <!-- Red color for Paid -->
+                        <div class="card-header"> 
+                            <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
+                        </div> 
+                        <div class="card-body text-white"> 
+                            <form> 
+                                <!-- Display user's reservation details -->
+                                <p>Date: 2024-04-12</p>
+                                <p>Name: Arif Saiful Bin Omar</p>
+                                <p>Email: arifsaiful@gmail.com</p>
+                                <p>Status: Paid</p>
+                                <!-- Link to edit page -->
+                                <a href="update.html" class="btn btn-primary btn-user btn-block">EDIT</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end volunteer information -->
+
+</div>
+
+
+
+
                 <!-- /.container-fluid -->
 
             </div>
