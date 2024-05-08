@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>SB Admin 2 - Dashboard</title>
 
@@ -19,7 +20,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body id="page-top">
@@ -63,11 +64,11 @@
            <li class="nav-item">
     <a class="nav-link" href="create.html">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Reservation</span>
+        <span>Make reservation</span>
     </a>
-                         <a class="nav-link" href="viewhtml.html">
+                         <a class="nav-link" href="view.html">
         <i class="fas fa-fw fa-list"></i>
-        <span>Reservation Made</span>
+        <span>View reservation</span>
     </a>
 </li>
             
@@ -238,16 +239,25 @@
                            <div class="card shadow mb-4"> 
                                <div class="card-header"> <h6 class="m-0 font-weight-bold text-primary">Volunteer Information</h6> </div> 
                                <div class="card-body text-"> <form> 
-                                       <div class="form-group"> <label for="name">Name:</label> <input type="text" class="form-control" id="name" placeholder="Enter name"> </div>
-                                       <div class="form-group"> <label for="id">IC Number:</label> <input type="text" class="form-control" id="id" placeholder="Enter IC Number"> </div>
-                                       <div class="form-group"> <label for="phone">Phone Number:</label> <input type="text" class="form-control" id="phone" placeholder="Enter phone number"> </div>
-                                       <div class="form-group"> <label for="email">Email:</label> <input type="email" class="form-control" id="email" placeholder="Enter email"> </div> 
-                                       <div class="form-group"> <label for="dob">Date of Birth:</label> <input type="date" class="form-control" id="dob" placeholder="Enter date of birth"> </div> 
-                                       <div class="form-group"> <label for="address">Address:</label> <input type="text" class="form-control" id="address" placeholder="Enter address"> </div> 
-                                       <div class="form-group"> <label for="age">Age:</label> <input type="number" class="form-control" id="age" placeholder="Enter age"> </div> 
-                                       <div class="form-group"> <label for="occupation">Occupation:</label> <input type="text" class="form-control" id="occupation" placeholder="Enter occupation"> </div> 
-                                      <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                    Submit
+                                       <div class="form-group"> 
+                                       <label for="dob">Select Date:</label> 
+                                        <input type="date" class="form-control" id="dob" placeholder="2024-05-15" disabled> </div>
+                                      
+                                       <div class="form-group"> <label for="name">Name:</label> 
+                                       <input type="text" class="form-control" id="name" placeholder="Alif Satar Bin Omar" disabled> </div>
+                                       <div class="form-group"> <label for="id">IC Number:</label>
+                                       <input type="text" class="form-control" id="id" placeholder="020803424543" disabled> </div>
+                                       <div class="form-group"> <label for="phone">Phone Number:</label> <input type="text" class="form-control" id="phone" placeholder="0199735345" disabled> </div>
+                                       <div class="form-group"> <label for="email">Email:</label> <input type="email" class="form-control" id="email" placeholder="alifsatar@gmail.com" disabled> </div> 
+                                       <div class="form-group"> <label for="dob">Date of Birth:</label> <input type="text" class="form-control" id="occupation" placeholder="23/3/2001" disabled> </div> 
+                                           <!--<input type="date" class="form-control" id="dob" placeholder="23/3/2001"> </div>-->
+                                       <div class="form-group"> <label for="address">Address:</label> <input type="text" class="form-control" id="address" placeholder="Klang, Selangor" disabled> </div> 
+                                       <div class="form-group"> <label for="age">Age:</label> <input type="number" class="form-control" id="age" placeholder="23"disabled> </div> 
+                                       <div class="form-group"> <label for="occupation">Occupation:</label> <input type="text" class="form-control" id="occupation" placeholder="clerk" disabled> </div> 
+                                      <label class="form-label" for="customFile">Attach File</label><input type="text" class="form-control" id="occupation" placeholder="PaymentReceipt.jpg" disabled> </div> 
+                                     <!-- <input type="file" class="form-control" id="customFile" /><br>-->
+                                     <a href="view.html" class=" btn btn-primary btn-user btn-block">
+                                    Reserve
                                 </a>
                                    </form>
                                </div>
@@ -261,7 +271,19 @@
         </div>
          <!-- end volunteer information-->
                    
-
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#dob", {
+            minDate: "today", // Restrict to today's date
+            maxDate: new Date().fp_incr(365), // Allow selection up to one year from today
+            disable: [
+                function(date) {
+                    // Disable all days except Friday, Saturday, Sunday, and Monday
+                    return !(date.getDay() === 5 || date.getDay() === 6 || date.getDay() === 0 || date.getDay() === 1);
+                }
+            ]
+        });
+    </script>
                 </div>
                 <!-- /.container-fluid -->
 
