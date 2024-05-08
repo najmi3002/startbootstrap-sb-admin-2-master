@@ -13,8 +13,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
@@ -26,8 +25,8 @@
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-        
-          <!-- Sidebar -->
+
+        <!-- Sidebar -->
         <ul class="navbar-nav bg-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
@@ -56,24 +55,18 @@
                 Interface
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-
-
             <!-- Nav Item - Utilities Collapse Menu -->
-           <li class="nav-item">
-    <a class="nav-link" href="create.html">
-        <i class="fas fa-fw fa-cog"></i>
-        <span>Reservation</span>
-    </a>
-               <a class="nav-link" href="viewhtml.html">
-        <i class="fas fa-fw fa-list"></i>
-        <span>Reservation Made</span>
-    </a>
-</li>
+            <li class="nav-item">
+                <a class="nav-link" href="create.html">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Create</span>
+                </a>
+                <a class="nav-link" href="viewhtml.html">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>View</span>
+                </a>
+            </li>
 
-
-
-            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -99,12 +92,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Search -->
-                    
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -154,11 +143,10 @@
                                         <span class="font-weight-bold">U have successfuly register</span>
                                     </div>
                                 </a>
-                                
+
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
-
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
@@ -173,9 +161,9 @@
                                 <h6 class="dropdown-header">
                                     Message Center
                                 </h6>
-                                
-                                
-                                
+
+
+
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
@@ -223,159 +211,212 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">RESERVATION MADE</h1>
-                       
+                        <h1 class="h3 mb-0 text-gray-800">VIEW</h1>
+
                     </div>
-               <!-- end reservation word-->
-                   <div class="container">
+                    <!-- end reservation word-->
+                    <div class="container">
 
-    <!-- start volunteer information -->
-    <div class="row justify-content-center">
+                        <!-- start volunteer information -->
+                        <div class="row justify-content-center">
 
-        <!-- Active Section -->
-        <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
-            <h2 class="mb-3">Active</h2>
-        </div>
+                            <!-- Active Section -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
+                                <h2 class="mb-3">Active</h2>
+                            </div>
+                            <!-- Container 1 (Pending) - Active -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+                                <div class="card o-hidden border-0 shadow-lg">
+                                    <div class="card-body p-0">
+                                        <div class="card shadow mb-4 bg-info"> <!-- Blue color for pending -->
+                                            <div class="card-header"> 
+                                                <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
+                                            </div> 
+                                            <div class="card-body text-white"> 
+                                                <form> 
+                                                    <!-- Display user's reservation details -->
+                                                    <p>Date: 2024-05-15</p>
+                                                    <p>Name: Alif Satar Bin Omar</p>
+                                                    <p>Email: alifsatar@gmail.com</p>
+                                                    <p>Status: Pending</p>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-primary btn-user btn-block btn-overview" data-toggle="modal" data-target="#overviewModal1">
+                                                        Edit
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        <!-- Container 1 (Paid) - Active -->
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-            <div class="card o-hidden border-0 shadow-lg">
-                <div class="card-body p-0">
-                    <div class="card shadow mb-4 bg-success"> <!-- Green color for paid -->
-                        <div class="card-header"> 
-                            <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
-                        </div> 
-                        <div class="card-body text-white"> 
-                            <form> 
-                                <!-- Display user's reservation details -->
-                                <p>Date: 2024-05-15</p>
-                                <p>Name: Arif Saiful Bin Omar</p>
-                                <p>Email: arifsaiful@gmail.com</p>
-                                <p>Status: Paid</p>
-                                <!-- Link to edit page -->
-                                <a href="update.html" class="btn btn-primary btn-user btn-block">EDIT</a>
-                            </form>
+                            <!-- Modal for Alif Satar Bin Omar (Active) -->
+                            <div class="modal fade" id="overviewModal1" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="overviewModalLabel1">Reservation Overview</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Display additional information here -->
+                                            <p>Date: 2024-05-15</p>
+                                            <p>Name: Alif Satar Bin Omar</p>
+                                            <p>Email: alifsatar@gmail.com</p>
+                                            <p>Status: Pending</p>
+                                            <p>ID: 020803424543</p>
+                                            <p>Phone Number: 0199735345</p>
+                                            <p>Date of Birth: 23/3/2001</p>
+                                            <p>Address: Klang, Selangor</p>
+                                            <p>Age: 23</p>
+                                            <p>Occupation: Clerk</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- History Section -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
+                                <h2 class="mb-3">History</h2>
+                            </div>
+
+                            <!-- Container 3 (Paid) - History -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+                                <div class="card o-hidden border-0 shadow-lg" id="redContainer1">
+                                    <div class="card-body p-0">
+                                        <div class="card shadow mb-4 bg-danger"> <!-- Red color for Paid -->
+                                            <div class="card-header"> 
+                                                <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
+                                            </div> 
+                                            <div class="card-body text-white"> 
+                                                <form> 
+                                                    <!-- Display user's reservation details -->
+                                                    <p>Date: 2024-04-12</p>
+                                                    <p>Name: Arif Saiful Bin Omar</p>
+                                                    <p>Email: arifsaiful@gmail.com</p>
+                                                    <p>Status: Paid</p>
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-primary btn-user btn-block btn-overview" data-toggle="modal" data-target="#overviewModal3">
+                                                        Overview
+                                                    </button>
+                                                    <!-- Button trigger delete confirmation modal -->
+                                                    <button type="button" class="btn btn-danger btn-user btn-block" data-toggle="modal" data-target="#deleteConfirmationModal">
+                                                        Delete
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal for Arif Saiful Bin Omar (History) -->
+                            <div class="modal fade" id="overviewModal3" tabindex="-1" role="dialog" aria-labelledby="overviewModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="overviewModalLabel3">Reservation Overview</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Display additional information here -->
+                                            <p>Date: 2024-04-12</p>
+                                            <p>Name: Arif Saiful Bin Omar</p>
+                                            <p>Email: arifsaiful@gmail.com</p>
+                                            <p>Status: Paid</p>
+                                            <p>ID: 020803424543</p>
+                                            <p>Phone Number: 0199735345</p>
+                                            <p>Date of Birth: 23/3/2001</p>
+                                            <p>Address: Klang, Selangor</p>
+                                            <p>Age: 23</p>
+                                            <p>Occupation: Clerk</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Delete Confirmation Modal -->
+                            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteConfirmationModalLabel">Confirm Deletion</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete this item?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-danger" id="deleteItem">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- End of Content Wrapper -->
 
-        <!-- Container 2 (Pending) - Active -->
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-            <div class="card o-hidden border-0 shadow-lg">
-                <div class="card-body p-0">
-                    <div class="card shadow mb-4 bg-info"> <!-- Blue color for pending -->
-                        <div class="card-header"> 
-                            <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
-                        </div> 
-                        <div class="card-body text-white"> 
-                            <form> 
-                                <!-- Display user's reservation details -->
-                                <p>Date: 2024-05-15</p>
-                                <p>Name: Alif Satar Bin Omar</p>
-                                <p>Email: alifsatar@gmail.com</p>
-                                <p>Status: Pending</p>
-                                <!-- Link to edit page -->
-                                <a href="update.html" class="btn btn-primary btn-user btn-block">EDIT</a>
-                            </form>
-                        </div>
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="login.html">Logout</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- History Section -->
-        <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
-            <h2 class="mb-3">History</h2>
-        </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Container 3 (Paid) - History -->
-        <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-            <div class="card o-hidden border-0 shadow-lg">
-                <div class="card-body p-0">
-                    <div class="card shadow mb-4 bg-danger"> <!-- Red color for Paid -->
-                        <div class="card-header"> 
-                            <h6 class="m-0 font-weight-bold text-white">Volunteer Information</h6> 
-                        </div> 
-                        <div class="card-body text-black"> 
-                            <form> 
-                                <!-- Display user's reservation details -->
-                                <p>Date: 2024-04-12</p>
-                                <p>Name: Arif Saiful Bin Omar</p>
-                                <p>Email: arifsaiful@gmail.com</p>
-                                <p>Status: Paid</p>
-                                <!-- Link to edit page -->
-                                <a href="delete.html" class="btn btn-primary btn-user btn-block">DELETE</a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    </div>
-    <!-- end volunteer information -->
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
 
-</div>
-
-
-
-
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
-
-            
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+        <!-- Custom script for deleting red container -->
+        <script>
+            $(document).ready(function () {
+                $("#deleteItem").click(function () {
+                    $("#redContainer1").remove();
+                    $('#deleteConfirmationModal').modal('hide');
+                });
+            });
+        </script>
 
 </body>
 
