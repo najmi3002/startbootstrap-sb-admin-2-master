@@ -297,26 +297,17 @@
                                         </div>
                                         <div class="modal-body">
                                             <form>
-                                                <div class="form-group">
-                                                    <label for="editID">ID</label>
-                                                    <input type="text" class="form-control" id="editID" placeholder="Enter ID">
-                                                </div>
+                                               
                                                 <div class="form-group">
                                                     <label for="editPhoneNumber">Phone Number</label>
                                                     <input type="text" class="form-control" id="editPhoneNumber" placeholder="Enter Phone Number">
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="editDateOfBirth">Date of Birth</label>
-                                                    <input type="text" class="form-control" id="editDateOfBirth" placeholder="Enter Date of Birth">
-                                                </div>
+                                                
                                                 <div class="form-group">
                                                     <label for="editAddress">Address</label>
                                                     <input type="text" class="form-control" id="editAddress" placeholder="Enter Address">
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="editAge">Age</label>
-                                                    <input type="text" class="form-control" id="editAge" placeholder="Enter Age">
-                                                </div>
+                    
                                                 <div class="form-group">
                                                     <label for="editOccupation">Occupation</label>
                                                     <input type="text" class="form-control" id="editOccupation" placeholder="Enter Occupation">
@@ -474,19 +465,13 @@
             $(document).ready(function () {
                 $("#saveChanges1").click(function () {
                     // Retrieve edited information
-                    var editedID = $("#editID").val();
                     var editedPhoneNumber = $("#editPhoneNumber").val();
-                    var editedDateOfBirth = $("#editDateOfBirth").val();
                     var editedAddress = $("#editAddress").val();
-                    var editedAge = $("#editAge").val();
                     var editedOccupation = $("#editOccupation").val();
 
                     // Update overview with edited information
-                    $("#overviewModal1").find("p:contains('ID:')").text("ID: " + editedID);
                     $("#overviewModal1").find("p:contains('Phone Number:')").text("Phone Number: " + editedPhoneNumber);
-                    $("#overviewModal1").find("p:contains('Date of Birth:')").text("Date of Birth: " + editedDateOfBirth);
-                    $("#overviewModal1").find("p:contains('Address:')").text("Address: " + editedAddress);
-                    $("#overviewModal1").find("p:contains('Age:')").text("Age: " + editedAge);
+                    $("#overviewModal1").find("p:contains('Address:')").text("Address: " + editedAddress)
                     $("#overviewModal1").find("p:contains('Occupation:')").text("Occupation: " + editedOccupation);
                 });
 
