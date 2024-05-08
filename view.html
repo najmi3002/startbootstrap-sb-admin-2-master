@@ -465,18 +465,6 @@
             $(document).ready(function () {
                 $("#saveChanges1").click(function () {
                     // Retrieve edited information
-                    var editedPhoneNumber = $("#editPhoneNumber").val();
-                    var editedAddress = $("#editAddress").val();
-                    var editedOccupation = $("#editOccupation").val();
-
-                    // Update overview with edited information
-                    $("#overviewModal1").find("p:contains('Phone Number:')").text("Phone Number: " + editedPhoneNumber);
-                    $("#overviewModal1").find("p:contains('Address:')").text("Address: " + editedAddress)
-                    $("#overviewModal1").find("p:contains('Occupation:')").text("Occupation: " + editedOccupation);
-                });
-
-                $("#saveChanges3").click(function () {
-                    // Retrieve edited information
                     var editedID = $("#editID").val();
                     var editedPhoneNumber = $("#editPhoneNumber").val();
                     var editedDateOfBirth = $("#editDateOfBirth").val();
@@ -485,13 +473,18 @@
                     var editedOccupation = $("#editOccupation").val();
 
                     // Update overview with edited information
-                    $("#overviewModal3").find("p:contains('ID:')").text("ID: " + editedID);
-                    $("#overviewModal3").find("p:contains('Phone Number:')").text("Phone Number: " + editedPhoneNumber);
-                    $("#overviewModal3").find("p:contains('Date of Birth:')").text("Date of Birth: " + editedDateOfBirth);
-                    $("#overviewModal3").find("p:contains('Address:')").text("Address: " + editedAddress);
-                    $("#overviewModal3").find("p:contains('Age:')").text("Age: " + editedAge);
-                    $("#overviewModal3").find("p:contains('Occupation:')").text("Occupation: " + editedOccupation);
+                    $("#overviewModal1").find("p:contains('ID:')").text("ID: " + editedID);
+                    $("#overviewModal1").find("p:contains('Phone Number:')").text("Phone Number: " + editedPhoneNumber);
+                    $("#overviewModal1").find("p:contains('Date of Birth:')").text("Date of Birth: " + editedDateOfBirth);
+                    $("#overviewModal1").find("p:contains('Address:')").text("Address: " + editedAddress);
+                    $("#overviewModal1").find("p:contains('Age:')").text("Age: " + editedAge);
+                    $("#overviewModal1").find("p:contains('Occupation:')").text("Occupation: " + editedOccupation);
+                    
+                   // Close the modal
+        $('#editModal1').modal('hide');
                 });
+
+              
             });
        
         </script>
