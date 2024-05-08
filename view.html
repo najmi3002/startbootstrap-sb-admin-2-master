@@ -241,6 +241,10 @@
                                                     <p>Status: Pending</p>
                                                     <!-- Button trigger modal -->
                                                     <button type="button" class="btn btn-primary btn-user btn-block btn-overview" data-toggle="modal" data-target="#overviewModal1">
+                                                        Overview
+                                                    </button>
+                                                    <!-- Edit button -->
+                                                    <button type="button" class="btn btn-warning btn-user btn-block btn-edit" data-toggle="modal" data-target="#editModal1">
                                                         Edit
                                                     </button>
                                                 </form>
@@ -279,6 +283,53 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Edit Modal for Alif Satar Bin Omar (Active) -->
+                            <div class="modal fade" id="editModal1" tabindex="-1" role="dialog" aria-labelledby="editModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="editModalLabel1">Edit Information</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="editID">ID</label>
+                                                    <input type="text" class="form-control" id="editID" placeholder="Enter ID">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editPhoneNumber">Phone Number</label>
+                                                    <input type="text" class="form-control" id="editPhoneNumber" placeholder="Enter Phone Number">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editDateOfBirth">Date of Birth</label>
+                                                    <input type="text" class="form-control" id="editDateOfBirth" placeholder="Enter Date of Birth">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editAddress">Address</label>
+                                                    <input type="text" class="form-control" id="editAddress" placeholder="Enter Address">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editAge">Age</label>
+                                                    <input type="text" class="form-control" id="editAge" placeholder="Enter Age">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="editOccupation">Occupation</label>
+                                                    <input type="text" class="form-control" id="editOccupation" placeholder="Enter Occupation">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary" id="saveChanges1">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <!-- History Section -->
                             <div class="col-xl-12 col-lg-12 col-md-12 mb-4">
                                 <h2 class="mb-3">History</h2>
@@ -416,6 +467,47 @@
                     $('#deleteConfirmationModal').modal('hide');
                 });
             });
+            
+            
+            // Script to save edited information
+            $(document).ready(function () {
+                $("#saveChanges1").click(function () {
+                    // Retrieve edited information
+                    var editedID = $("#editID").val();
+                    var editedPhoneNumber = $("#editPhoneNumber").val();
+                    var editedDateOfBirth = $("#editDateOfBirth").val();
+                    var editedAddress = $("#editAddress").val();
+                    var editedAge = $("#editAge").val();
+                    var editedOccupation = $("#editOccupation").val();
+
+                    // Update overview with edited information
+                    $("#overviewModal1").find("p:contains('ID:')").text("ID: " + editedID);
+                    $("#overviewModal1").find("p:contains('Phone Number:')").text("Phone Number: " + editedPhoneNumber);
+                    $("#overviewModal1").find("p:contains('Date of Birth:')").text("Date of Birth: " + editedDateOfBirth);
+                    $("#overviewModal1").find("p:contains('Address:')").text("Address: " + editedAddress);
+                    $("#overviewModal1").find("p:contains('Age:')").text("Age: " + editedAge);
+                    $("#overviewModal1").find("p:contains('Occupation:')").text("Occupation: " + editedOccupation);
+                });
+
+                $("#saveChanges3").click(function () {
+                    // Retrieve edited information
+                    var editedID = $("#editID").val();
+                    var editedPhoneNumber = $("#editPhoneNumber").val();
+                    var editedDateOfBirth = $("#editDateOfBirth").val();
+                    var editedAddress = $("#editAddress").val();
+                    var editedAge = $("#editAge").val();
+                    var editedOccupation = $("#editOccupation").val();
+
+                    // Update overview with edited information
+                    $("#overviewModal3").find("p:contains('ID:')").text("ID: " + editedID);
+                    $("#overviewModal3").find("p:contains('Phone Number:')").text("Phone Number: " + editedPhoneNumber);
+                    $("#overviewModal3").find("p:contains('Date of Birth:')").text("Date of Birth: " + editedDateOfBirth);
+                    $("#overviewModal3").find("p:contains('Address:')").text("Address: " + editedAddress);
+                    $("#overviewModal3").find("p:contains('Age:')").text("Age: " + editedAge);
+                    $("#overviewModal3").find("p:contains('Occupation:')").text("Occupation: " + editedOccupation);
+                });
+            });
+       
         </script>
 
 </body>
